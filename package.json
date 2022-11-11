@@ -1,7 +1,7 @@
 {
   "name": "understrap-child",
   "version": "1.1.0",
-  "description": "Basic Child Theme for Understrap Theme Framework: https://github.com/understrap/understrap",
+  "description": "Basic Child Theme for Understrap Theme Framework: https://github.com/takenorioshima/understrap",
   "main": "index.js",
   "scripts": {
     "bs": "browser-sync start --config src/build/browser-sync.config.js",
@@ -26,7 +26,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/understrap/understrap-child.git"
+    "url": "https://github.com/takenorioshima/understrap-child.git"
   },
   "keywords": [
     "wordpress",
@@ -35,10 +35,10 @@
     "bootstrap",
     "underscores"
   ],
-  "author": "The Understrap Authors (https://github.com/understrap/understrap/graphs/contributors)",
+  "author": "The Understrap Authors (https://github.com/understrap/understrap/graphs/contributors) + Takenori Oshima",
   "license": "GPL-2.0",
   "bugs": {
-    "url": "https://github.com/understrap/understrap-child/issues"
+    "url": "https://github.com/takenorioshima/understrap-child/issues"
   },
   "homepage": "https://understrap.com",
   "dependencies": {},
