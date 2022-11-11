@@ -47,6 +47,9 @@ module.exports = {
       filename: "css/main.css",
     }),
   ],
+  watchOptions: {
+    ignored: /node_modules/,
+  },
   devtool: "source-map",
   mode: "production",
 };
