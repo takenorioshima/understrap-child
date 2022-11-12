@@ -48,35 +48,6 @@ if ( ! function_exists( 'understrap_theme_customize_register' ) ) {
 		}
 
 		$wp_customize->add_setting(
-			'understrap_bootstrap_version',
-			array(
-				'default'           => 'bootstrap4',
-				'type'              => 'theme_mod',
-				'sanitize_callback' => 'sanitize_text_field',
-				'capability'        => 'edit_theme_options',
-			)
-		);
-
-		$wp_customize->add_control(
-			new WP_Customize_Control(
-				$wp_customize,
-				'understrap_bootstrap_version',
-				array(
-					'label'       => __( 'Bootstrap Version', 'understrap' ),
-					'description' => __( 'Choose between Bootstrap 4 or Bootstrap 5', 'understrap' ),
-					'section'     => 'understrap_theme_layout_options',
-					'settings'    => 'understrap_bootstrap_version',
-					'type'        => 'select',
-					'choices'     => array(
-						'bootstrap4' => __( 'Bootstrap 4', 'understrap' ),
-						'bootstrap5' => __( 'Bootstrap 5', 'understrap' ),
-					),
-					'priority'    => apply_filters( 'understrap_bootstrap_version_priority', 10 ),
-				)
-			)
-		);
-
-		$wp_customize->add_setting(
 			'understrap_container_type',
 			array(
 				'default'           => 'container',
@@ -97,8 +68,13 @@ if ( ! function_exists( 'understrap_theme_customize_register' ) ) {
 					'settings'    => 'understrap_container_type',
 					'type'        => 'select',
 					'choices'     => array(
-						'container'       => __( 'Fixed width container', 'understrap' ),
-						'container-fluid' => __( 'Full width container', 'understrap' ),
+						'container'       => __( 'container', 'understrap' ),
+						'container-sm' => __( 'container-sm', 'understrap' ),
+                        'container-md' => __( 'container-md', 'understrap' ),
+                        'container-lg' => __( 'container-lg', 'understrap' ),
+                        'container-xl' => __( 'container-xl', 'understrap' ),
+                        'container-xxl' => __( 'container-xxl', 'understrap' ),
+                        'container-fluid' => __( 'container-fluid', 'understrap' ),
 					),
 					'priority'    => apply_filters( 'understrap_container_type_priority', 10 ),
 				)
