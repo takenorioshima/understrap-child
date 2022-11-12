@@ -8,7 +8,7 @@
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
 
-
+require 'inc/customizer.php';
 
 /**
  * Removes the parent themes stylesheet and scripts from inc/enqueue.php
