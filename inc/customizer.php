@@ -69,12 +69,12 @@ if ( ! function_exists( 'understrap_theme_customize_register' ) ) {
 					'type'        => 'select',
 					'choices'     => array(
 						'container'       => __( 'container', 'understrap' ),
-						'container-sm' => __( 'container-sm', 'understrap' ),
-                        'container-md' => __( 'container-md', 'understrap' ),
-                        'container-lg' => __( 'container-lg', 'understrap' ),
-                        'container-xl' => __( 'container-xl', 'understrap' ),
-                        'container-xxl' => __( 'container-xxl', 'understrap' ),
-                        'container-fluid' => __( 'container-fluid', 'understrap' ),
+						'container-sm'    => __( 'container-sm', 'understrap' ),
+						'container-md'    => __( 'container-md', 'understrap' ),
+						'container-lg'    => __( 'container-lg', 'understrap' ),
+						'container-xl'    => __( 'container-xl', 'understrap' ),
+						'container-xxl'   => __( 'container-xxl', 'understrap' ),
+						'container-fluid' => __( 'container-fluid', 'understrap' ),
 					),
 					'priority'    => apply_filters( 'understrap_container_type_priority', 10 ),
 				)
