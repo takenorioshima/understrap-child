@@ -71,17 +71,9 @@ function understrap_default_bootstrap_version( $current_mod ) {
 add_filter( 'theme_mod_understrap_bootstrap_version', 'understrap_default_bootstrap_version', 20 );
 
 
-
 /**
- * Loads javascript for showing customizer warning dialog.
+ * Remove customizer-controls.js
  */
 function understrap_child_customize_controls_js() {
-	wp_enqueue_script(
-		'understrap_child_customizer',
-		get_stylesheet_directory_uri() . '/js/customizer-controls.js',
-		array( 'customize-preview' ),
-		'20130508',
-		true
-	);
+	// Do nothing.
 }
-add_action( 'customize_controls_enqueue_scripts', 'understrap_child_customize_controls_js' );
