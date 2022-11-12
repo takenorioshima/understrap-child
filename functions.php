@@ -74,3 +74,20 @@ add_filter( 'theme_mod_understrap_bootstrap_version', 'understrap_default_bootst
 function understrap_child_customize_controls_js() {
 	// Do nothing.
 }
+
+/**
+ * Add editor stylesheet for the theme.
+ */
+function understrap_wpdocs_theme_add_editor_styles() {
+	add_editor_style( 'css/editor.css' );
+}
+add_action( 'admin_init', 'understrap_wpdocs_theme_add_editor_styles' );
+
+
+/**
+ * Enqueue admin css.
+ */
+function understrap_admin_style() {
+	wp_enqueue_style( 'admin_style', get_stylesheet_directory_uri() . '/css/admin.css', array(), \false, 'all' );
+}
+add_action( 'admin_enqueue_scripts', 'understrap_admin_style' );
