@@ -1,10 +1,10 @@
 {
   "name": "understrap-child",
-  "version": "1.0.0",
-  "main": "src/js/index.js",
-  "repository": "https://github.com/takenorioshima/understrap-child.git",
-  "author": "Takenori Oshima <takenorioshima@gmail.com>",
-  "license": "GPL-2.0",
+  "version": "1.1.0",
+  "private": true,
+  "engines": {
+		"node": ">=16.0.0"
+	},
   "scripts": {
     "build": "webpack --mode production",
     "dev": "webpack --mode development",
