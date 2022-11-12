@@ -55,14 +55,11 @@ add_action( 'after_setup_theme', 'add_child_theme_textdomain' );
 
 
 /**
- * Overrides the theme_mod to default to Bootstrap 5
- *
- * This function uses the `theme_mod_{$name}` hook and
- * can be duplicated to override other theme settings.
+ * Overrides the understrap_bootstrap_version value to Bootstrap 5
  *
  * @return string
  */
-function understrap_default_bootstrap_version( $current_mod ) {
+function understrap_default_bootstrap_version() {
 	return 'bootstrap5';
 }
 add_filter( 'theme_mod_understrap_bootstrap_version', 'understrap_default_bootstrap_version', 20 );
