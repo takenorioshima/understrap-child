@@ -45,7 +45,6 @@ function theme_enqueue_styles() {
 add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles' );
 
 
-
 /**
  * Load the child theme's text domain
  */
@@ -55,14 +54,12 @@ function add_child_theme_textdomain() {
 add_action( 'after_setup_theme', 'add_child_theme_textdomain' );
 
 
-
 /**
  * Overrides the theme_mod to default to Bootstrap 5
  *
  * This function uses the `theme_mod_{$name}` hook and
  * can be duplicated to override other theme settings.
  *
- * @param string $current_mod The current value of the theme_mod.
  * @return string
  */
 function understrap_default_bootstrap_version( $current_mod ) {

@@ -1,10 +1,16 @@
 const path = require("path");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const RemoveEmptyScriptsPlugin = require("webpack-remove-empty-scripts");
 
 module.exports = {
-  entry: "./src/index.js",
+  entry: {
+    main: "./src/index.js",
+    admin: "./src/sass/admin.scss",
+    editor: "./src/sass/editor.scss",
+  },
+
   output: {
-    filename: "js/main.js",
+    filename: "js/[name].js",
     path: path.resolve(__dirname),
   },
   module: {
@@ -43,8 +49,9 @@ module.exports = {
     ],
   },
   plugins: [
+    new RemoveEmptyScriptsPlugin(),
     new MiniCssExtractPlugin({
-      filename: "css/main.css",
+      filename: "css/[name].css",
     }),
   ],
   watchOptions: {
