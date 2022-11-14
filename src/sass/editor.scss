@@ -17,12 +17,14 @@
 @import "~bootstrap/scss/type";
 
 // Fixes Gutenberg's cover block color picker.
+/* stylelint-disable-next-line selector-class-pattern */
 .components-circular-option-picker__option {
-	border-radius: 50%;
+  border-radius: 50%;
 }
 
 // Matches the page title font weight.
-.editor-post-title .editor-post-title__input{
-	font-size: $h1-font-size;
-	font-weight: $headings-font-weight;
+/* stylelint-disable-next-line selector-class-pattern */
+.editor-post-title .editor-post-title__input {
+  font-size: $h1-font-size;
+  font-weight: $headings-font-weight;
 }
