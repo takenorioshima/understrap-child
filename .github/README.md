@@ -4,7 +4,7 @@ Parent Theme Project: [github.com/understrap/understrap](https://github.com/unde
 
 ## Deferences from original child theme
 - Drop BootStrap4 Support.
-- Add BootStrap5 responsive/liwuid container support. (Like `.container-xl`)
+- Add BootStrap5 responsive/liquid container support. (Like `.container-xl`)
 - Replace rollup with webpack 5.
 - Replace FontAwesome Icons with Bootstrap Icons.
 
