@@ -1,9 +1,10 @@
-# Understrap Child Starter Theme with Webpack
+# Understrap Child Starter Theme with webpack and Bootstrap Icons.
 Website: [understrap.com](https://understrap.com)
 Parent Theme Project: [github.com/understrap/understrap](https://github.com/understrap/understrap)
 
 ## Deferences from original child theme
 - Drop BootStrap4 Support.
+- Add BootStrap5 responsive/liwuid container support. (Like `.container-xl`)
 - Replace rollup with webpack 5.
 - Replace FontAwesome Icons with Bootstrap Icons.
 
