@@ -1,4 +1,9 @@
 {
-    "phpcs.standard": "../phpcs.xml",
-    "phpcbf.standard": "../phpcs.xml"
+  "phpcs.standard": "./phpcs.xml",
+  "phpcbf.standard": "./phpcs.xml",
+  "scss.validate": false,
+  "css.validate": false,
+  "stylelint.snippet": ["css", "less", "postcss", "scss"],
+  "stylelint.validate": ["css", "less", "postcss", "scss"],
+  "editor.codeActionsOnSave": { "source.fixAll.stylelint": true }
 }

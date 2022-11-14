@@ -1,0 +1,13 @@
+{
+  "printWidth": 120,
+  "tabWidth": 2,
+  "overrides": [
+    {
+      "files": "*.php",
+      "options": {
+        "useTabs": true,
+        "tabWidth": 4
+      }
+    }
+  ]
+}
