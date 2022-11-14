@@ -9,8 +9,7 @@ Parent Theme Project: [github.com/understrap/understrap](https://github.com/unde
 - Replace FontAwesome Icons with Bootstrap Icons.
 
 ## License
-GNU GPL version 2
-http://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html
+GNU GPL version 3
 
 ## Credits
 - Understrap by Howard Development & Consulting, LLC. : https://github.com/understrap/understrap-child (GNU GPLv2)
